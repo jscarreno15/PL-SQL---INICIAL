@@ -1,0 +1,15 @@
+
+--Desarrollar un programa que devuelva la cantidad de números múltiplos de 3 que existen del 1 al 100.
+
+DECLARE
+   V_NUM NUMBER;
+   V_NUM2 NUMBER;
+BEGIN
+    V_NUM := 1;
+    LOOP
+        V_NUM2 := V_NUM * 3;
+        DBMS_OUTPUT.PUT_LINE(V_NUM || '*3  = ' || V_NUM2);
+        V_NUM := V_NUM +1 ;
+        EXIT WHEN V_NUM = 100;
+        END LOOP;
+END;
